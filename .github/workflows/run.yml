@@ -1,6 +1,5 @@
 name: IBM Cloud Auto Restart
 
-
 on:
   push:
     branches: master
@@ -26,3 +25,4 @@ jobs:
       
     - name: Restart CF APP
       run: cf rs ${{ secrets.CFNAME }}
+
